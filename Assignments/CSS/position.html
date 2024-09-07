@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      height: 400px; 
+      width: 500px;
+      margin: 50px auto;
+      display: flex;
+      position: relative;
+
+      background: rgb(74, 54, 45);
+      background: linear-gradient(
+        0deg,
+        rgb(76, 70, 67) 0%,
+        rgb(251, 119, 3) 31%,
+        rgba(246, 242, 4, 0.975) 100%
+      );
+    }
+    .inner {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+    .circle {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: orangered;
+    }
+    .circle1 {
+      position: absolute;
+      top: 150px;
+      left: 200px;
+      z-index: 2;
+    }
+    .circle2 {
+      height: 120px;
+      width: 120px;
+      position: absolute;
+      background-color: yellow;
+      top: 140px;
+      left: 200px;
+      transition: all 300ms;
+    }
+    .box:hover .circle2 {
+      position: absolute;
+      top: 150px;
+      left: 210px;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+    </div>
+  </body>
+</html>

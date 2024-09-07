@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 700px;
+        border-radius: 13px;
+        border: 1px solid black;
+        margin: 150px auto;
+      }
+      .boll {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin: 60px;
+        padding: 10px;
+        background-color: rgb(15, 123, 123);
+        transition: all 1s;
+      }
+      .box:hover .boll {
+        transform: translateX(500px);
+        height: 60px;
+        width: 60px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="boll"></div>
+    </div>
+  </body>
+</html>
