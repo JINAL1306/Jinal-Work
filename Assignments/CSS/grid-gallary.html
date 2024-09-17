@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    .image-gallary {
+      display: grid;
+      width: fit-content;
+      grid-template-columns: repeat(5, 150px);
+      grid-template-rows: repeat(5, 150px);
+      background-color: black;
+      gap: 8px;
+      /* margin: 50px auto; */
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      transition: all 300ms;
+    }
+    img:hover {
+      transform: scale(1.2);
+    }
+
+    img:nth-child(1) {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    img:nth-child(2) {
+      grid-row: 1/3;
+      grid-column: 2/4;
+    }
+    img:nth-child(3) {
+      grid-row: 1/2;
+      grid-column: 4/5;
+    }
+    img:nth-child(4) {
+      grid-row: 1/2;
+      grid-column: 5/6;
+    }
+    img:nth-child(5) {
+      grid-row: 2/4;
+      grid-column: 1/2;
+    }
+    img:nth-child(6) {
+      grid-row: 3/4;
+      grid-column: 2/3;
+    }
+    img:nth-child(7) {
+      grid-row: 3/4;
+      grid-column: 3/4;
+    }
+    img:nth-child(8) {
+      grid-row: 2/4;
+      grid-column: 4/6;
+    }
+    img:nth-child(9) {
+      grid-row: 4/6;
+      grid-column: 1/3;
+    }
+    img:nth-child(10) {
+      grid-row: 4/5;
+      grid-column: 3/4;
+    }
+    img:nth-child(11) {
+      grid-row: 4/6;
+      grid-column: 4/5;
+    }
+    img:nth-child(12) {
+      grid-row: 4/6;
+      grid-column: 5/6;
+    }
+    img:nth-child(13) {
+      grid-row: 5/6;
+      grid-column: 3/4;
+    }
+    @media (max-width: 300px) {
+      .image-gallary {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(7, 100px);
+      }
+      img:nth-child(1) {
+        grid-row: 1/3;
+        grid-column: 1/2;
+      }
+      img:nth-child(2) {
+        grid-row: 1/2;
+        grid-column: 2/3;
+      }
+      img:nth-child(3) {
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+      img:nth-child(4) {
+        grid-row: 3/4;
+        grid-column: 1/3;
+      }
+      img:nth-child(5) {
+        grid-row: 4/5;
+        grid-column: 1/2;
+      }
+      img:nth-child(6) {
+        grid-row: 4/6;
+        grid-column: 2/3;
+      }
+      img:nth-child(7) {
+        grid-row: 5/6;
+        grid-column: 1/2;
+      }
+      img:nth-child(8) {
+        grid-row: 6/7;
+        grid-column: 1/2;
+      }
+      img:nth-child(9) {
+        grid-row: 6/7;
+        grid-column: 2/3;
+      }
+      img:nth-child(10) {
+        grid-row: 7/8;
+        grid-column: 1/3;
+      }
+      img:nth-child(11) {
+        grid-row: 8/9;
+        grid-column: 1/2;
+      }
+      img:nth-child(12) {
+        grid-row: 8/10;
+        grid-column: 2/3;
+      }
+      img:nth-child(13) {
+        grid-row: 9/10;
+        grid-column: 1/2;
+      }
+    }
+
+    @media (min-width: 700px) {
+      .image-gallary {
+        grid-template-columns: repeat(5, 150px);
+        grid-template-rows: repeat(5, 150px);
+      }
+      img:nth-child(1) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+      img:nth-child(2) {
+        grid-row: 1/3;
+        grid-column: 2/4;
+      }
+      img:nth-child(3) {
+        grid-row: 1/2;
+        grid-column: 4/5;
+      }
+      img:nth-child(4) {
+        grid-row: 1/2;
+        grid-column: 5/6;
+      }
+      img:nth-child(5) {
+        grid-row: 2/4;
+        grid-column: 1/2;
+      }
+      img:nth-child(6) {
+        grid-row: 3/4;
+        grid-column: 2/3;
+      }
+      img:nth-child(7) {
+        grid-row: 3/4;
+        grid-column: 3/4;
+      }
+      img:nth-child(8) {
+        grid-row: 2/4;
+        grid-column: 4/6;
+      }
+      img:nth-child(9) {
+        grid-row: 4/6;
+        grid-column: 1/3;
+      }
+      img:nth-child(10) {
+        grid-row: 4/5;
+        grid-column: 3/4;
+      }
+      img:nth-child(11) {
+        grid-row: 4/6;
+        grid-column: 4/5;
+      }
+      img:nth-child(12) {
+        grid-row: 4/6;
+        grid-column: 5/6;
+      }
+      img:nth-child(13) {
+        grid-row: 5/6;
+        grid-column: 3/4;
+      }
+    }
+    .container {
+      width: fit-content;
+      display: flex;
+      margin: 50px auto;
+    }
+    .side-bar {
+      width: 200px;
+      min-height: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding-right: 20px;
+    }
+    h3 {
+      padding-top: 20px;
+      padding-right: 10px;
+    }
+
+    ul {
+      list-style: none;
+      text-align: end;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 10px;
+    }
+    .social-icon {
+      display: flex;
+      gap: 15px;
+      padding-top: 15px;
+      padding-right: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="image-gallary">
+        <img
+          src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/40192/woman-happiness-sunrise-silhouette-40192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/2065195/pexels-photo-2065195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/718978/pexels-photo-718978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/1090387/pexels-photo-1090387.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/1898555/pexels-photo-1898555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+      <div class="side-bar">
+        <h3>SHUTTER</h3>
+        <ul>
+          <li style="color: red">HOME</li>
+          <li>PHOTOS</li>
+          <li>BIO</li>
+          <li>BLOG</li>
+          <li>CONTACT</li>
+        </ul>
+        <div class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
