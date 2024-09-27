@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .box {
+        width: 1000px;
+        height: 600px;
+        border: 2px solid black;
+        /* border-bottom: 2px solid black; */
+        margin: 50px auto;
+        background-image: url(https://images.pexels.com/photos/18759222/pexels-photo-18759222/free-photo-of-under-the-stars.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-position: center;
+        position: relative;
+      }
+      .header {
+        clip-path: polygon(0% 46%, 0% 98%, 100% 99%, 100% 51%, 49% 76%);
+        background-color: white;
+        height: 500px;
+        width: 1000px;
+        position: absolute;
+        top: 105px;
+        /* z-index: 2; */
+        border-bottom: 2px solid black;
+      }
+      .main {
+        position: relative;
+      }
+      .main h2 {
+        color: white;
+        padding: 10px;
+        margin-left: 50px;
+        /* margin-top: 50px; */
+        height: 40px;
+        width: 80px;
+        border: 1px solid white;
+        border-radius: 10px;
+        text-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        font-size: small;
+        gap: 30px;
+        color: white;
+        justify-content: center;
+      }
+      li {
+        margin-top: -60px;
+      }
+      .pera {
+        color: white;
+        text-align: center;
+      }
+      h3 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 7px;
+      }
+      .hori {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* padding: 30px; */
+      }
+      .hori:nth-child(1) {
+        margin-left: 20px;
+        padding: 20px;
+      }
+      .hori p {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 15px;
+        width: 15px;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: white;
+      }
+      hr {
+        width: 200px;
+        height: 1px;
+        background-color: white;
+        /* gap: 20px; */
+      }
+      .peraone {
+        color: white;
+        text-align: center;
+      }
+      .button {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+      button {
+        background: black;
+        color: white;
+        padding: 8px;
+      }
+      .icon {
+        position: absolute;
+        bottom: 0px;
+        left: 465px;
+        top: 440px;
+        color: red;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+      
+      footer {
+        height: 200px;
+        width: 1000px;
+        display: flex;
+        justify-content: space-around;
+        z-index: 5;
+        position: relative;
+      }
+      footer .card1 {
+        height: 160px;
+        width: 150px;
+        position: absolute;
+        left: 20px;
+        bottom: -55px;
+        text-align: center;
+              }
+      .card1 h6 {
+        color: red;
+      }
+      footer .card2 {
+        height: 100px;
+        width: 150px;
+        position: absolute;
+        left: 200px;
+        bottom: 2px;
+        text-align: center;
+
+             }
+      footer .card3 {
+        height: 100px;
+        width: 150px;
+        position: absolute;
+        right: 200px;
+        bottom: 0px;
+        text-align: center;
+
+       }
+      footer .card4 {
+        height: 100px;
+        width: 150px;
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        text-align: center;
+       }
+       footer p {
+        color: gray;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="header"></div>
+      <div class="main">
+        <div>
+          <h2>LOGO</h2>
+          <ul>
+            <li style="color: red">HOME</li>
+            <li>ABOUT US</li>
+            <li>PHONE</li>
+            <li>TEAM</li>
+            <li>BLOG</li>
+            <li>PROFILE</li>
+            <li>CONTACT</li>
+          </ul>
+          <p class="pera">our clients are our first priority</p>
+          <h3>WELCOME TO SKY</h3>
+
+          <p class="peraone">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+            Nam exercitationem, voluptates eligendi reiciendis <br />quod
+            aliquam similique. Eveniet non <br />asperiores explicabo.
+          </p>
+          <div class="button">
+            <button style="background-color: red">LET'S GET START</button>
+            <button>LEARN MORE</button>
+          </div>
+        </div>
+        <div class="icon"><i class="fa-solid fa-arrow-down"></i></div>
+      </div>
+
+      <footer>
+        <div class="card1">
+          <div><i class="fa-solid fa-infinity"></i></div>
+          <h6>SLEEX DESIGN</h6>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+         <div class="card2">
+          <i class="fa-regular fa-heart"></i>
+          <h6>CLEAN CODE</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="card3">
+          <i class="fa-regular fa-lightbulb"></i>
+          <h6>CREATIVE IDEAS</h6>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          </p>
+        </div>
+        <div class="card4">
+          <i class="fa-regular fa-message"></i>
+          <h6>FREE SUPPORT</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+        </div>
+        
+        </div> 
+      </footer>
+    </div>
+  </body>
+</html>
