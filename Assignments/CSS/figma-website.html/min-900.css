@@ -1,0 +1,119 @@
+@media (min-width:900px) {
+    #toggle-label {
+        display: none
+    }
+    #toggle {
+        display: none;
+    }
+    header .wrapper {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        opacity: 1;
+        visibility: visible;
+    }
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+    main .section-two img {
+        height: 600px;
+        width: 900px;
+        padding: var(--section-top);
+        margin: 50px auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .section-two .logo {
+        display: flex;
+        gap: 5px;
+    }
+    main .section-two .logo img {
+        height: 100px;
+        width: 150px;
+    }
+    .section-four h2 {
+        padding-top: 50px;
+    }
+    
+    .section-four .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 80px;
+        padding: 80px;
+    }
+    .section-five .left-side img {
+        height: 500px;
+        width: 800px;
+    }
+    .contact {
+        height: 150px;
+        width: 80%;
+        margin: 50px auto;
+    }
+    .section-six {
+        background-color: var(--bg-secondary-color);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        gap: 20px;
+    }
+    .section-six p {
+        color: var(--text-secondary-color);
+    }
+    .section-six .profile {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    
+    .profile .one {
+        display: flex;
+        }
+    
+    .profile .one .profile-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .profile .two {
+        display: flex;
+        }
+    
+    .profile .two .profile-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .profile .three {
+        display: flex;
+    }
+    .profile .three .profile-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .profile .one img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .profile .two img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }.profile .three img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+}

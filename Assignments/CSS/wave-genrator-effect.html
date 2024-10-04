@@ -45,22 +45,31 @@
         height: 50px;
         width: 50px;
         border-radius: 50%;
+        /* z-index: 5; */
+      }
+      .profile-one {
+        position: relative;
+        /* transition: all 1s; */
       }
       .one h4 {
         color: transparent;
+        /* position: absolute;
+        bottom: 0px;
+        left: 0px; */
       }
+
       .one:hover h4 {
         color: black;
         animation-duration: 1s;
         animation-name: slidein;
-        animation-iteration-count: 2;
+        animation-iteration-count: 1;
       }
       @keyframes slidein {
         from {
-          margin-top: 100%;
+          margin-top: 0%;
         }
         to {
-          margin-top: 0%;
+          margin-top: 100%;
         }
       }
 
@@ -86,7 +95,7 @@
         color: black;
         animation-duration: 1s;
         animation-name: slidein;
-        animation-iteration-count: 2;
+        animation-iteration-count: 1;
       }
       @keyframes slidein {
         from {
