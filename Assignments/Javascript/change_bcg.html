@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHANGE BG COLOR</title>
+  </head>
+  <style>
+    .container {
+      height: 500px;
+      width: 800px;
+      background-color: purple;
+      border: 1px solid white;
+      margin: 50px auto;
+      text-align: center;
+
+    }
+    button {
+      background-color: aqua;
+      height: 50px;
+      width: 200px;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 2px;
+      border: 1px solid white;
+      margin-top: 200px;
+      cursor: pointer;
+    }
+    button:hover {
+        background-color: #8edccf;
+    }
+    p {
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .blue{
+      background-color:#532187;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <button>Change BG Color</button>
+        <p>#532187</p>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector('button');
+      const container = document.querySelector('.container');
+      btn.onclick = () => {
+      container.classList.toggle('blue');
+      }
+    </script>
+  </body>
+</html>
