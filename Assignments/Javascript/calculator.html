@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+    }
+    .container {
+      height: 300px;
+      width: 400px;
+      margin: auto;
+      border: 1px solid rgba(0, 0, 0, 0.466);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    label {
+      font-weight: 600;
+    }
+    input,
+    button {
+      margin: 10px;
+      padding: 5px;
+    }
+    button {
+      width: 30px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.618);
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2>Maths Operations</h2>
+      <label>Enter 1st number:</label>
+      <input type="number" id="number1" /><br />
+      <label>Enter 2nd number:</label>
+      <input type="number" id="number2" /><br />
+
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculate('-')">-</button>
+      <button onclick="calculate('*')">*</button>
+      <button onclick="calculate('/')">/</button>
+      <button onclick="calculate('%')">%</button>
+
+      <h3>Answer: <span id="result">0</span></h3>
+    </div>
+
+    <script>
+      function calculate(operator) {
+        let number1 = parseInt(document.querySelector("#number1").value);
+        let number2 = parseInt(document.querySelector("#number2").value);
+        switch (operator) {
+          case "+":
+            result = number1 + number2;
+            break;
+          case "-":
+            result = number1 - number2;
+            break;
+          case "*":
+            result = number1 * number2;
+            break;
+          case "/":
+            result = number1 / number2;
+            break;
+          case "%":
+            result = number1 % number2;
+            break;
+          default:
+            result = "wrong information";
+        }
+
+        document.querySelector("#result").innerText = result;
+      }
+    </script>
+  </body>
+</html>
