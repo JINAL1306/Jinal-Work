@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+    }
+    .container {
+      width: 700px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slider {
+      display: flex;
+      transition: all 300ms;
+    }
+    .slide {
+      height: 500px;
+      object-fit: cover;
+      min-width: 100%;
+    }
+    .before,
+    .after {
+      height: 50px;
+      position: absolute;
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px;
+      top: calc(50% - 25px);
+    }
+    .before {
+      left: 10px;
+    }
+    .after {
+      right: 10px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="slider">
+        <img
+          src="https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="slide"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/733090/pexels-photo-733090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="slide"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/17648559/pexels-photo-17648559/free-photo-of-close-up-of-a-swan-swimming-ion-the-lake.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="slide"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="slide"
+          alt=""
+        />
+        <img
+          src="https://images.pexels.com/photos/928340/pexels-photo-928340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="slide"
+          alt=""
+        />
+      </div>
+      <button class="before" onclick="beforeSlide()">❮</button>
+      <button class="after" onclick="afterSlide()">❯</button>
+    </div>
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      function showSlide(index) {
+        if (index >= slides.length) {
+          currentSlide = 0;
+        } else if (index < 0) {
+          currentSlide = slides.length - 1;
+        } else {
+          currentSlide = index;
+        }
+        const slider = document.querySelector(".slider");
+        slider.style.transform = `translateX(${-currentSlide * 100}%)`;
+      }
+      function beforeSlide() {
+        showSlide(currentSlide + 1);
+      }
+      function afterSlide() {
+        showSlide(currentSlide - 1);
+      }
+    </script>
+  </body>
+</html>
