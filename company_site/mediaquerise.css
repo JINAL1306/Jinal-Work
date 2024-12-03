@@ -153,4 +153,9 @@
       height: 300px;
       width: 300px;
     }
-  }
+      footer nav ul {
+      margin-top: 10px;
+    }
+    .contact-icon {
+      margin-top: 200px;
+    }
