@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery slider</title>
+  </head>
+  <style>
+    .container {
+      background-color: #ffc107;
+      color: #333;
+      margin: 50px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 300px;
+      width: 80%;
+    }
+    .buttons {
+      margin: 50px auto;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      border: 1px solid black;
+      font-size: 18px;
+      background-color: #fff;
+      border-radius: 5px;
+      margin: 5px;
+    }
+    button:hover {
+      background-color: #ddd;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2>SlideUp / SlideDown / SlideToggle</h2>
+    </div>
+    <div class="buttons">
+      <button class="slideUp">slideUp</button>
+      <button class="slideDown">slideDown</button>
+      <button class="slideToggle">slideToggle</button>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const box = $(".container");
+
+      $(".slideUp").click(() => {
+        box.slideUp(1000);
+      });
+      $(".slideDown").click(() => {
+        box.slideDown(1000);
+      });
+      $(".slideToggle").click(() => {
+        box.slideToggle(1000);
+      });
+    </script>
+  </body>
+</html>
