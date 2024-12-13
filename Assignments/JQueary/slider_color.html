@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider Animation</title>
+  </head>
+  <style>
+    .container {
+      width: 80%;
+      height: 400px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid black;
+    }
+    .box {
+      height: 200px;
+      width: 100px;
+      border: 1px solid black;
+    }
+    .one {
+      background-color: red;
+    }
+    .two {
+      background-color: aqua;
+    }
+    .three {
+      background-color: green;
+    }
+    .four {
+      background-color: black;
+    }
+    .five {
+      background-color: pink;
+    }
+    .six {
+      background-color: brown;
+    }
+    .red {
+      background-color: red;
+    }
+    .aqua {
+      background-color: aqua;
+    }
+    .green {
+      background-color: green;
+    }
+    .black {
+      background-color: black;
+    }
+    .pink {
+      background-color: pink;
+    }
+    .brown {
+      background-color: brown;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box one"></div>
+      <div class="box two"></div>
+      <div class="box three"></div>
+      <div class="box four"></div>
+      <div class="box five"></div>
+      <div class="box six"></div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const container = $(".container");
+      $(".one").click(() => {
+        container.addClass("red");
+      });
+      $(".two").click(() => {
+        container.addClass("aqua");
+      });
+      $(".three").click(() => {
+        container.addClass("green");
+      });
+      $(".four").click(() => {
+        container.addClass("black");
+      });
+      $(".five").click(() => {
+        container.addClass("pink");
+      });
+      $(".six").click(() => {
+        container.addClass("brown");
+      });
+    </script>
+  </body>
+</html>
